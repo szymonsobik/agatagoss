@@ -2,7 +2,7 @@ $(document).ready(function() {
     navBar();
     navigation();
     topShadow();
-    $('.dummy').viewportChecker();
+    // $('.dummy').viewportChecker();
 });
 
 $(window).scroll(function() {
