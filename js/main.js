@@ -23,7 +23,7 @@ function navigation() {
     $('body').on('click', '.scrollPage', function(e) {
         var section = $(this).attr("href");
         $('html, body').animate({
-            scrollTop: $(section).offset().top
+            scrollTop: $(section).offset().top - 57
         });
         $('.navBox').addClass('hide');
         e.preventDefault();
@@ -33,7 +33,7 @@ function navigation() {
 
 function topShadow() { 
     var scroll = $(window).scrollTop(),
-        pageHeight = $(window).outerHeight() - 40;
+        pageHeight = $(window).outerHeight() - 80;
 
     if (scroll <= pageHeight) {
         $('.topBar').removeClass('shadow');

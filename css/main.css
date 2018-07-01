@@ -43,7 +43,7 @@ img {
 
 .page {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 57px);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@ img {
 }
 
 .topBar {
-    padding: 18px;
+    padding: 5px 18px;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ img {
 }
 
 .topBar.shadow {
-    background: rgba(0,0,0,0.5);
+    background: #fff;
     transition: all .5s ease;
 }
 
@@ -98,6 +98,10 @@ img {
     overflow: hidden;
 }
 
+.page.landingPage {
+    height: 100vh;
+}
+
 .navigation {
     float: left;
 }
@@ -122,10 +126,6 @@ img {
     color: #85684a;
     background-position: 0 50%;
     background-repeat: no-repeat;
-}
-
-.shadow .navigation li a {
-    color: #fff;
 }
 
 .logo {
@@ -209,12 +209,12 @@ OFFER
 
 .col50h {
     width: 100%;
-    height: 50vh;
+    height: 50%;
 }
 
 .offerTitle {
     width: 100%;
-    height: 40vh;
+    height: 37vh;
     text-indent: -3000em;
     background: url(../img/offer-title.png) no-repeat 50% 50% transparent;
     background-size: contain;
@@ -286,14 +286,14 @@ CONTACT
 
 .contactTop {
     width: 100%;
-    height: 50vh;
+    height: 50%;
     background: url(../img/contact-img.png) no-repeat 50% 50% transparent;
     background-size: cover;
 }
 
 .contactBottom {
     width: 100%;
-    height: 50vh;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
