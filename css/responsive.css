@@ -47,6 +47,10 @@
         display: none;
     }
 
+    .page.quotePage {
+        height: calc(100vh - 57px);
+    }
+
     .page.offerPage {
         padding: 0;
     }
@@ -70,6 +74,32 @@
     .contactBottom {
         height: auto;
         padding: 25px 10px 10px 10px;
+    }
+
+    .modalShadow {
+        z-index: 1000000;
+    }
+
+    .modalWrapper {
+        width: 90vw;
+        height: 90vh;
+        margin: -45vh 0 0 -45vw;
+        padding: 30px 20px;
+        z-index: 10000000;
+    }
+    
+    .modalContent {
+        overflow-y: scroll;
+        max-height: calc(90vh - 60px);
+    }
+
+    .closeModal {
+        top: 5px;
+        right: 5px;
+    }
+
+    .contactTop {
+        height: calc(100vh - 57px);
     }
 
 }
