@@ -3,12 +3,19 @@ $(document).ready(function() {
     navigation();
     topShadow();
     hideModal();
-    $('body').on('click', '.offerSeeMore a', function(e) {
+    $('body').on('click', '.offerSeeMore a, .offerItem img', function(e) {
         e.preventDefault();
         var $id = $(this).attr('data-id');
         modal($id);
     });
     // $('.dummy').viewportChecker();
+});
+
+$(window).on("load",function(){
+    $(".modalContent").mCustomScrollbar({
+        scrollButtons:{enable:true},
+        theme:"dark-thick"
+    });
 });
 
 $(window).scroll(function() {
@@ -54,7 +61,7 @@ function modal($id) {
     $('body').css({
         'overflow-y':'hidden'
     });
-    $('body').on('click', '.modalShadow, .modalContent', function(e) {
+    $('body').on('click', '.modalShadow', function(e) {
         e.preventDefault();
         $('.modalShadow').fadeOut();
         $('#' + $id).fadeOut();

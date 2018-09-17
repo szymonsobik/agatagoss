@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
@@ -64,7 +65,7 @@
 
         <article class="page quotePage">
             <div class="quoteBox">
-                <p class="quoteTxt">“Nigdy nie jest za późno, by stać się tym, kim <b>moglibyśmy</b> się stać."</p>
+                <p class="quoteTxt">“<b>Nigdy nie jest za późno</b>, by stać się tym, kim moglibyśmy się stać."</p>
                 <p><span class="quoteImg">georgeEliot</span></p>
             </div>
         </article>
@@ -76,7 +77,7 @@
             <div class="col50h offerBottom">
                 <div class="offerItem">
                     <div>
-                        <img src="img/offer-1.png" alt="" />
+                        <img src="img/offer-1.png" data-id="modal-1" alt="" />
                     </div>
                     <p style="font-size: 14px; text-align: center;">Coaching</p>
                     <p>Gdy idąc drogą nie widzisz drogowskazów, nie potrafisz dostrzec żadnych wskazówek, zaczynasz szukać ludzi, którzy Ci w tym pomogą. To jasne. Nie od dziś wiadomo, że razem można więcej. Chętnie zostanę Twoim towarzyszem i pomogę Ci rozwiązać Twoje problemy - czy to w sferze osobistej czy zawodowej. Jako Twój coach pomogę odnaleźć Ci drogę, na końcu której znajduje się rozwiązanie Twoich problemów. Organizuję sesje  indywidualne jak i dla grup.</p>
@@ -84,7 +85,7 @@
                 </div>
                 <div class="offerItem">
                     <div>
-                        <img src="img/offer-2.png" alt="" />
+                        <img src="img/offer-2.png" alt="" data-id="modal-2" />
                     </div>
                     <p style="font-size: 14px; text-align: center;">Doradztwo zawodowe</p>
                     <p>Małe i wielkie kariery zawodowe. Ja je osiągać? Jak odnaleźć się w gąszczu możliwości, które odkrywa przed nami dzisiejszy świat? Jaki zawód wybrać, by wykonywanie go nie było wyłącznie obowiązkiem, ale także przyjemnością? Bez względu na to czy dopiero rozpoczynasz swoją karierę zawodową czy też planujesz się przekwalifikować, pomogę Ci ocenić Twoje możliwości, predyspozycje oraz lepiej zrozumieć Twoje środowisko zawodowe. Wspólnie odnajdziemy drogę, która będzie sprawiała Ci satysfakcję i odpowiadała Twoim ambicjom.</p>
@@ -92,7 +93,7 @@
                 </div>
                 <div class="offerItem">
                     <div>
-                        <img src="img/offer-3.png" alt="" />
+                        <img src="img/offer-3.png" alt="" data-id="modal-3" />
                     </div>
                     <p style="font-size: 14px; text-align: center;">Fundusze unijne</p>
                     <p>Od pomysłu do sukcesu – to bardzo proste. Szczególnie jeśli ma się, dosłownie na wyciągnięcie ręki, fundusze unijne. Po Twojej stronie leży wyjście z inicjatywą. Ja zajmę się całą resztą. Od lat zajmuję się kompleksowym doradztwem w zakresie finansowania firm ze szczególnym uwzględnieniem funduszy unijnych. Współpracuję z firmami, gdzie projektem zajmujemy się od początku do końca. Nie musisz się martwić o prowadzenie dokumentacji czy kontakt z instytucjami pośredniczącymi.</p>
@@ -108,18 +109,18 @@
             </div>
         </article>
 
-        <article class="contactPage" id="contact">
+        <article class="contactPage">
             <div class="contactTop"></div>
-            <div class="contactBottom">
+            <div class="contactBottom" id="contact">
                 <img src="img/contact-logo.png" alt="" />
-                <p class="contactOne">tel: 606 600 606<br><a href="#">agatagoss@gmail.com</a></p>
+                <p class="contactOne">tel: 606 600 606<br><a href="mailto:agatagoss@gmail.com">agatagoss@gmail.com</a></p>
                 <p class="contactTwo">www.agatagoss.pl</p>
             </div>
         </article>
 
         <footer>
             <div>
-                <img src="img/footer-logo.png" alt="" />
+                <a href="http://k11.myportfolio.com" target="_blank"><img src="img/footer-logo.png" alt="" /></a>
             </div>
             <div>Wszystkie prawa zastrzeżone.</div>
         </footer>
@@ -186,6 +187,7 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.js"></script>
         <script src="js/main.js?v=2"></script>
 
     </body>

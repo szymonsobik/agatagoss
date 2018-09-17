@@ -244,18 +244,35 @@ OFFER
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: background-color .25s ease-in;
+}
+
+.offerItem:hover {
+    transition: background-color .25s ease-in;
 }
 
 .offerItem:nth-of-type(1) {
     background-color: #e8e4df;
 }
 
+.offerItem:hover:nth-of-type(1) {
+    background-color: #e0dcd7;
+}
+
 .offerItem:nth-of-type(2) {
     background-color: #f8f1ea;
 }
 
+.offerItem:hover:nth-of-type(2) {
+    background-color: #f1eae3;
+}
+
 .offerItem:nth-of-type(3) {
     background-color: #d8d5d0;
+}
+
+.offerItem:hover:nth-of-type(3) {
+    background-color: #d0cdc9;
 }
 
 .offerItem:nth-of-type(4) {
@@ -330,7 +347,7 @@ CONTACT
     left: 50%;
     width: 60vw;
     height: 80vh;
-    z-index: 100;
+    z-index: 1000;
     background: #fff;
     margin: -40vh 0 0 -30vw;
     padding: 60px;
@@ -338,10 +355,11 @@ CONTACT
 }
 
 .modalContent {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    z-index: 100000;
     max-height: calc(80vh - 120px);
     position: relative;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 
 #modal-3 {
@@ -353,11 +371,27 @@ CONTACT
     max-height: calc(40vh - 120px);
 }
 
+.offerItem img:hover {
+    cursor: pointer;
+}
+
 .closeModal {
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
+    background: url(../img/close-btn.png) no-repeat 0 0 transparent;
+    width: 25px;
+    height: 25px;
+    text-indent: -3000em;
+    border: 0;
+    transition: opacity .25s ease-in;
+    opacity: .5;
+}
+
+.closeModal:hover {
+    opacity: 0.8;
+    transition: opacity .25s ease-in;
 }
 
 /*
